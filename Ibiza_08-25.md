@@ -1,5 +1,9 @@
-
-
+## Характеристики Яхты
+- Название: Corcho 13
+- Длина: 44ft (13m)
+- Осадка: 2.2m
+- Ширина: 4.25m
+- Год: 2019
 
 ## Список продуктов
 
@@ -38,14 +42,26 @@
 - обед на яхте
 - прибытие Talamanca:
    - Марины 
-      - [Botafoc](https://www.botafocibiza.com/), [navily](https://www.navily.com/port/botafoc-ibiza/675)
-      - [Eivissa](https://marinaibiza.com/), [navily](https://www.navily.com/port/marina-ibiza/1672)
-   - если не будет места в марине то бухты начиная с севера
+      - [Botafoc](https://www.botafocibiza.com/), [navily](https://www.navily.com/port/botafoc-ibiza/675) 38°54.88'N,1°26.62'E VHF-9
+      - [Ibiza](https://marinaibiza.com/), [navily](https://www.navily.com/port/marina-ibiza/1672) 38°54.88'N,1°26.62'E VHF-9
+      - [Santa Eulalia Ibiza](https://www.navily.com/port/marina-santa-eulalia-ibiza/676), [navily](https://www.navily.com/port/marina-santa-eulalia-ibiza/676) 38°59.02'N, 1°32.35'E VHF-9 потенциально только для маленьких катеров
+   - Бухты начиная с севера на юг (есть смысл переночивать максимально на севере и потом двигаться на юг):
       - :green_heart: [Cala Lionga](https://www.navily.com/mouillage/cala-llonga/8037) 38°57.20'N, 1°31.48'E, хорошая защитано маловато места, выход на пляж, 25 мин до UNVRS, 20мин Pacha
       - :green_heart: [Sol d'en Serra](https://www.navily.com/mouillage/sol-den-serra/44050) 38°56.77'N, 1°30.73'E, хорошая защита, есть выход через ресторан, 25 мин до UNVRS, 20мин Pacha
-      - :yellow_heart: [Cala Roja](https://www.navily.com/mouillage/cala-roja/51160) 38°54.88'N, 1°28.57'E есть небольшой пляж но не уверен что от туда есть выход к дороге, 20 мин до UNVRS, 15мин Pacha
+      - :yellow_heart: [Cala Roja](https://www.navily.com/mouillage/cala-roja/51160) 38°54.88'N, 1°28.57'E, есть небольшой пляж но не уверен что от туда есть выход к дороге, 20 мин до UNVRS, 15мин Pacha
       - :yellow_heart: [Cala Talamanca](https://www.navily.com/mouillage/cala-talamanca/10959) 38°54.87'N, 1°27.48'E, удобный [dingy pears](https://maps.app.goo.gl/5cGGSq2NwSb4G1oF8), 15мин Pacha Пешком, 15мин UNVRS
-- ужин в городе если не поздно прийдем РЕШИТЬ ГДЕ
+   - ужин в городе если не поздно прийдем РЕШИТЬ ГДЕ
+- альтернативное прибытие в San Antony:
+   - Марины:
+      - [Club Nàutic Sant Antoni](https://www.esnautic.com/), [navily](https://www.navily.com/port/club-nautic-sant-antoni-de-portmany/672) 38°58.63'N, 1°18.13'E VHF-9
+      - [Ports IB San Antony](https://www.navily.com/port/ports-ib-san-antony-de-portimany/3610), [navily](https://www.navily.com/port/ports-ib-san-antony-de-portimany/3610) 38°58.63'N, 1°18.13'E VHF-14
+   - Бухты начиная с севера на юг (есть смысл переночивать максимально на севере и потом двигаться на юг):
+      - :green_heart: [Cala de Portinatx](https://www.navily.com/mouillage/cala-de-portinatx/6154) 39°6.65'N, 1°30.88'E, хорошая защита и инфраструктура вокруг, есть пляж, маяк, пещера, 30 мин до UNVRS и Pacha
+      - :green_heart: [Cala Xuclà](https://www.navily.com/mouillage/cala-xucla/10967) 39°6.22'N, 1°30.45'E, хорошая защита, много места, далеко от центра долно быть мало лодок, красиво, есть выход на пляж, 30 мин до UNVRS и Pacha
+      - :green_heart: [Cala Xarraca](https://www.navily.com/mouillage/cala-xarraca/7254) 39°6.05'N, 1°29.85'E, хорошая защита, много места, далеко от центра долно быть мало лодок, красиво, есть выход но нет пляжа, 30 мин до UNVRS и Pacha
+      - :green_heart: [Cala Benirràs](https://www.navily.com/mouillage/cala-benirras/6151) 39°5.38'N, 1°27.08'E, хорошая защита, дальше от центра должно быть меньше лодок, выход на пляж, 30 мин до UNVRS и Pacha
+      - :green_heart: [Cala Sant Miquel](https://www.navily.com/mouillage/cala-sant-miquel/10965) 39°5.05'N, 1°26.38'E, хорошая защита, дальше от центра должно быть меньше лодок, есть пещера, выход на пляж, 25 мин до UNVRS, 30мин Pacha
+   - ужин в городе если не поздно прийдем РЕШИТЬ ГДЕ (Cafe del Mar)
 
 
 
