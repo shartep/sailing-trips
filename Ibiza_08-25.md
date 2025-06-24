@@ -40,6 +40,10 @@
 - завтрак на яхте
 - отправление 8:00
 - обед на яхте
+- выбор точки назначения:
+   - если получится забронировать место в марине, то идем в марину
+   - иначе идем на Форментеру (вариант B), в 3й у нас больше всего времени, этот остров дальше всего поэтому есть смысл потратить 3й день на него
+   - иначе остаемся в обной из бухт Ибицы, в случае необходимости быть на острове (плохая погода, отсутствие свободных буев)
 - прибытие Talamanca:
    - Марины 
       - [Botafoc](https://www.botafocibiza.com/), [navily](https://www.navily.com/port/botafoc-ibiza/675) 38°54.88'N,1°26.62'E VHF-9
@@ -50,8 +54,20 @@
       - :green_heart: [Sol d'en Serra](https://www.navily.com/mouillage/sol-den-serra/44050) 38°56.77'N, 1°30.73'E, хорошая защита, есть выход через ресторан, 25 мин до UNVRS, 20мин Pacha
       - :yellow_heart: [Cala Roja](https://www.navily.com/mouillage/cala-roja/51160) 38°54.88'N, 1°28.57'E, есть небольшой пляж но не уверен что от туда есть выход к дороге, 20 мин до UNVRS, 15мин Pacha
       - :yellow_heart: [Cala Talamanca](https://www.navily.com/mouillage/cala-talamanca/10959) 38°54.87'N, 1°27.48'E, удобный [dingy pears](https://maps.app.goo.gl/5cGGSq2NwSb4G1oF8), 15мин Pacha Пешком, 15мин UNVRS
-   - ужин в городе если не поздно прийдем РЕШИТЬ ГДЕ
-- альтернативное прибытие в San Antony:
+   - Ужин:
+      - 
+- альтернатива **B** прибытие на Espalmador (Форментера):
+   - Марина [La Savina](https://marinalasavina.com/), [navily](https://www.navily.com/port/port-formentera-marina/2308) 38°43.97'N, 1°25.17'E VHF-9
+   - :green_heart: буи [Badia de s'Alga](https://www.navily.com/mouillage/badia-de-salga/19059) 38°46.77'N, 1°25.57'E VHF-77 +34971439779, краcивый пляж и бухта, нельзя ставать на якорь, пляж дикий необитаемый, бронировать буй
+   - :yellow_heart: буй [Caló de s'Oli](https://www.navily.com/mouillage/calo-de-soli/19550) 38°43.78'N, 1°24.17'E VHF-77 +34971439779, менее защищеннфая бухта но близко к городу есть рестораны
+   - :green_heart: [Platja de ses Illetes West](https://www.navily.com/mouillage/platja-de-ses-illetes-west/10885) 38°45.62'N, 1°25.95'E очень популярный и красивый пляж
+   - Ужин:
+      - [Beso Beach Formentera](http://www.besobeach.com/) до 22:00
+      - [Port Amagat](https://portamagat.com/) до 00:00
+      - [Cafe del Lago](https://www.cafedellagoformentera.es/) до 00:30
+      - [El Marino](https://maps.app.goo.gl/Wu9BSmuz5v4bwXkg6) до 02:00
+      - [NDK& MR WOK KEBAB](https://maps.app.goo.gl/bqRvs8tfm3y7494X6) до 03:00
+- альтернатива **C** прибытие в San Antony:
    - Марины:
       - [Club Nàutic Sant Antoni](https://www.esnautic.com/), [navily](https://www.navily.com/port/club-nautic-sant-antoni-de-portmany/672) 38°58.63'N, 1°18.13'E VHF-9
       - [Ports IB San Antony](https://www.navily.com/port/ports-ib-san-antony-de-portimany/3610), [navily](https://www.navily.com/port/ports-ib-san-antony-de-portimany/3610) 38°58.63'N, 1°18.13'E VHF-14
@@ -62,8 +78,7 @@
       - :green_heart: [Cala Benirràs](https://www.navily.com/mouillage/cala-benirras/6151) 39°5.38'N, 1°27.08'E, хорошая защита, дальше от центра должно быть меньше лодок, выход на пляж, 30 мин до UNVRS и Pacha
       - :green_heart: [Cala Sant Miquel](https://www.navily.com/mouillage/cala-sant-miquel/10965) 39°5.05'N, 1°26.38'E, хорошая защита, дальше от центра должно быть меньше лодок, есть пещера, выход на пляж, 25 мин до UNVRS, 30мин Pacha
    - ужин в городе если не поздно прийдем РЕШИТЬ ГДЕ (Cafe del Mar в марине Club Nautic Saint Antoni 17-01, Restaurant El Carmen 13-21, рестораны ниже)
-
-
+- клуб [HI IBIZA: Glitterbox](https://www.ibiza-spotlight.com/night/promoters/hi-glitterbox) 
 
 ### **День третий - 25.08.25: Ibiza**
 - завтрак на яхте
@@ -105,6 +120,15 @@
 Самый популярный пляж — активный, с клубами, кафешками.
 Ushuaïa и Hï Ibiza находятся прямо здесь.
 - клуб [Ushuaïa: Dimitri Vegas & Like Mike](https://www.ibiza-spotlight.com/night/promoters/tomorrowland-presents-dimitri-vegas-mike)
+
+
+
+
+- Cala d’Hort
+- Cala Comte
+- Cala Bassa
+- Cala Salada, красиво но нельзя ставать на якорь
+- Ses Illetes пляж на Форментере
 
 
 
@@ -245,6 +269,7 @@ Ushuaïa и Hï Ibiza находятся прямо здесь.
 - **Bai Bai Eivissa(19-01)** Ресторан баскской кухни
 - **Heart Ibiza:** Он расположен в Марина Ботафоч(Ibiza Gran Hotel) и предлагает блюда уличной кухни из разных стран, а также уникальный дизайн и декорацииУникальный ресторан от Cirque du Soleil совмещает театральное выступление с гастрономией.
 - **El Olivo Mio (18-00):** Уютное заведение в старом городе, отличная местная и средиземноморская кухня.
+- **Teatro Pereyra Ibiza:** Dinner show, [booking](https://www.teatropereyraibiza.com/en/bookings/)
 
 ### Сан-Антонио и окрестности:
 - Hostal Restaurante la Torre(08-00) — закаты с бокалом вина.
