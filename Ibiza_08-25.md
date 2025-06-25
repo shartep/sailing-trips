@@ -7,6 +7,13 @@
 
 ## Список продуктов
 
+- Кол-во завтраков:
+- Кол-во обедов:
+- Кол-во ужинов:
+
+- Еда:
+- Вода:
+- Алкоголь:
 
 ## Чеклист приемики лодки
 
@@ -88,74 +95,72 @@
       - [Hostal Restaurante la Torre](https://maps.app.goo.gl/oVRWqUzPP5TY5PLB8) до 00:00
 - клуб [HI IBIZA: Glitterbox](https://www.ibiza-spotlight.com/night/promoters/hi-glitterbox) 
 
-### **День третий - 25.08.25: Ibiza**
+### **День третий - 25.08.25: Formentera**
 - завтрак на яхте
-- посещение красивого места РЕШИТЬ КАКОЕ:
-  вариант 1 Форментера — «Карибы Средиземноморья» ⚓Playa de Ses Illetes
-Самый известный пляж острова, с кристально чистой водой и белым песком.
-Отличное место для якорной стоянки (днём), как будто вы в Мальдивах.
-Рестораны на берегу: Juan y Andrea, Besos Beach (можно швартоваться с помощью тендера).
-  вариант 2 ⚓Espalmador Island
-Частный остров к северу от Форментеры, доступен только по морю.
-Дикие пляжи, солевые лагуны, уединённая атмосфера.
-Обязательно брать с собой воду и еду — ничего нет, зато невероятно красиво.
-   вариант 3 ⚓Cala Saona
-Уютная бухта на западном берегу острова, популярна среди яхт.
-Красные скалы, идеальный закат, прозрачная вода.
-Можно заночевать на якоре (удобно и безопасно при хорошей погоде).
+- посещение красивого места:
+   - :green_heart: [Platja de ses Illetes West](https://www.navily.com/mouillage/platja-de-ses-illetes-west/10885) 38°45.62'N, 1°25.95'E «Карибы Средиземноморья» cамый известный пляж острова, с кристально чистой водой и белым песком. Отличное место для якорной стоянки (днём), как будто вы в Мальдивах. Рестораны на берегу: Juan y Andrea, Besos Beach (можно швартоваться с помощью тендера).
+   - :green_heart: [Badia de s'Alga (Llacuna d'Espalmador)](https://www.navily.com/mouillage/badia-de-salga/19059) 38°46.77'N, 1°25.57'E Частный остров к северу от Форментеры, доступен только по морю. Дикие пляжи, солевые лагуны, уединённая атмосфера. Обязательно брать с собой воду и еду — ничего нет, зато невероятно красиво.
+   - :green_heart: [Cala Saona](https://www.navily.com/mouillage/cala-saona/6150) Уютная бухта на западном берегу острова, популярна среди яхт. Красные скалы, идеальный закат, прозрачная вода.
 - обед на яхте
-- попробовать перейти в бухту ближе к центру
-- ужин перед клубом РЕШИТЬ ГДЕ
-- клуб [UNVRS: Eric Prydz](https://www.ibiza-spotlight.com/night/promoters/eric-prydz-unvrs)
+- перейти в бухту ближе к старому городу Talamanca:
+   - :yellow_heart: [Cala Talamanca](https://www.navily.com/mouillage/cala-talamanca/10959) 38°54.87'N, 1°27.48'E, удобный [dingy pears](https://maps.app.goo.gl/5cGGSq2NwSb4G1oF8), 15мин Pacha Пешком, 15мин UNVRS
+   - :yellow_heart: [Cala Roja](https://www.navily.com/mouillage/cala-roja/51160) 38°54.88'N, 1°28.57'E, есть небольшой пляж но не уверен что от туда есть выход к дороге, 20 мин до UNVRS, 15мин Pacha
+- Ужин:
+   - [Teatro Pereyra Ibiza](https://www.teatropereyraibiza.com/en/bookings): Dinner show at 21:30, boocked entrance at 20:30
+   - [Sa Cova](https://maps.app.goo.gl/AFtaqoJfWWUtYdEj9) до 02:00
+   - [La Scala](https://maps.app.goo.gl/N7f4ZnMkZKKJuJXx8) до 00:00
+   - [El Olivo Mio](https://maps.app.goo.gl/A2mTaaWcLGzCvcwk7) до 00:00
+   - [Bai Bai Eivissa](https://maps.app.goo.gl/yaB9dGLccEpHeYkGA) до 01:00
+   - [La Brasa](https://maps.app.goo.gl/3fxQBU9dcig5JwYR8) до 01:00
+- клуб [UNVRS: Eric Prydz](https://www.ibiza-spotlight.com/night/promoters/eric-prydz-unvrs) 00:00
 
-### **День четвертый - 26.08.25: Ibiza**
+### **День четвертый - 26.08.25: San Antonio**
 - завтрак на яхте
--  Cala Comte & Cala Bassa
-Бирюзовая вода, живописные рифы, белый песок.
-Кафе Sunset Ashram — шикарное место для заката.
-Часто стоят яхты рядом с пляжем, хорошая якорная зона.
-или 
-- Dalt Vila (Старый город)
-Крепостной город, внесён в список ЮНЕСКО.
-Узкие мощёные улочки, белые дома, смотровые площадки.
-Отличный закат с верхнего уровня стены.
-- клуб [Pacha: CAMELPHAT](https://www.ibiza-spotlight.com/night/promoters/camelphat-pacha)
-- клуб [Amnesia: Eastenderz](https://www.ibiza-spotlight.com/night/promoters/eastenderz-amnesia)
+- посещение красивого места:
+   - :green_heart: [Cala d’Hort](https://www.navily.com/mouillage/cala-dhort/7240) 38°53.28'N, 1°13.38'E 
+   - :green_heart: [Cala Comte (Cala Escondida)](https://www.navily.com/mouillage/es-raco-den-xic-cala-escondida/10906) 38°57.68'N, 1°13.10'E
+   - :yellow_heart: [Cala Bassa](https://www.navily.com/mouillage/cala-bassa/7242) 38°58.13'N, 1°14.57'E 
+- обед на яхте
+- ночевка:
+   - :green_heart: [Port des Torrent](https://www.navily.com/mouillage/port-des-torrent/10911) 38°58.10'N, 1°15.87'E
+- Ужин:
+   - [Sunset Ashram](https://maps.app.goo.gl/2DJviAeUfei7jc4a8) до 21:30 — шикарное место для заката. Часто стоят яхты рядом с пляжем, хорошая якорная зона.
+   - [Cafe del Mar](https://maps.app.goo.gl/LX1xovHMxVBLYQsR6) до 01:00
+   - [Café Mambo Ibiza](https://maps.app.goo.gl/fQXYjshvytTgR42H9) до 03:00
+   - [Hostal Restaurante la Torre](https://maps.app.goo.gl/oVRWqUzPP5TY5PLB8) до 00:00
+- клуб [Pacha: CAMELPHAT](https://www.ibiza-spotlight.com/night/promoters/camelphat-pacha) 23:30
+- клуб [Amnesia: Eastenderz](https://www.ibiza-spotlight.com/night/promoters/eastenderz-amnesia) 01:00
 
-### **День пятый - 27.08.25: Ibiza**
+### **День пятый - 27.08.25: Ibiza Beach**
 - завтрак на яхте
-- Playa d’en Bossa
-Самый популярный пляж — активный, с клубами, кафешками.
-Ushuaïa и Hï Ibiza находятся прямо здесь.
-- клуб [Ushuaïa: Dimitri Vegas & Like Mike](https://www.ibiza-spotlight.com/night/promoters/tomorrowland-presents-dimitri-vegas-mike)
+- переход обратно к старому городу:
+   - :green_heart: [Es Bol Nou](https://www.navily.com/mouillage/es-bol-nou/37323) 38°52.02'N, 1°19.85'E
+   - :green_heart: [Sa Caixota](https://www.navily.com/mouillage/sa-caixota/8035) 38°52.52'N, 1°17.70'E
+- [Dalt Vila](https://maps.app.goo.gl/fdaznAonTEgtJcgj6) (Старый город) Крепостной город, внесён в список ЮНЕСКО. Узкие мощёные улочки, белые дома, смотровые площадки. Отличный закат с верхнего уровня стены.
+- [Playa d’en Bossa](https://maps.app.goo.gl/e1be9HqP2DsD3soU7) Самый популярный пляж — активный, с клубами, кафешками. Ushuaïa и Hï Ibiza находятся прямо здесь.
+- обед в городе или на пляже
+- клуб [Ushuaïa: Dimitri Vegas & Like Mike](https://www.ibiza-spotlight.com/night/promoters/tomorrowland-presents-dimitri-vegas-mike) 17:00-23:00
+- Ужин на яхте 
 
-
-
-
-- Cala d’Hort
-- Cala Comte
-- Cala Bassa
-- Cala Salada, красиво но нельзя ставать на якорь
-- Ses Illetes пляж на Форментере
-
-
-
-### **День шестой - 28.08.25: переход обратно РЕШИТЬ КУДА КОНКРЕТНО**
+### **День шестой - 28.08.25: переход обратно Alicante**
 - подъем 7:00
 - завтрак на яхте
 - отправление 8:00
 - обед на яхте
-- прибытие РЕШИТЬ КУДА КОНКРЕТНО ???
-- ужин на берегу
+- прибытие в марину [Real Club Náutico de Calpe](https://www.navily.com/port/real-club-nautico-de-calpe/153) 38°38.30'N, 0°4.22'E
+- ужин [Bambero](https://maps.app.goo.gl/n99geJkbwsBtwKos6)
+- прогулка по набережной
 
 
 ### **День седьмой - 29.08.25: окресности Denia**
 - завтрак на яхте
+- хайкинг [Cim del Penyal d'Ifac](https://maps.app.goo.gl/mBprX51kwhtbk5DS9)
+- :green_heart: [Cala el Pom](https://www.navily.com/mouillage/cala-el-pom/7217) 38°44.77'N, 0°13.62'E
 - [Cova Tallada](https://maps.app.goo.gl/jQFk9zTu5z7ykUCR8) - морская пещера, можно подойти на тузике
--
 - обед на яхте
--
-- ужин на берегу РЕШИТЬ ГДЕ
+- возвращение в марину
+- Ужин набережная Denia
+- подведение итогов (обмен фотками, деньгами, впечатлениями)
 
 ### **День восьмой - 30.08.25: Denia**
 - подьем 07:00
