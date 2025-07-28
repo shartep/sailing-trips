@@ -160,12 +160,13 @@
 - ужин на яхте
 - окончательное планирование перехода: проверить погоду, ветер, волны, выбрать точку назначения
 
+
 ### **День второй - 24.08.25: переход на Ibiza**
 - подъем 6:00
 - отправление 7:00
 - завтрак на яхте
 - обед на яхте
-- основной вариант **А** прибытие на Espalmador (Форментера):
+- основной **вариант А** прибытие на Espalmador (Форментера):
    - :green_heart: буи [Badia de s'Alga](https://www.navily.com/mouillage/badia-de-salga/19059) 38°46.77'N, 1°25.57'E VHF-77 +34971439779, PR: NW-N-NE-E, частный остров к северу от Форментеры, доступен только по морю. Дикие пляжи, солевые лагуны, уединённая атмосфера, нельзя ставать на якорь, пляж дикий необитаемый, по пляжу можно дойти до города, бронировать буй
    - :green_heart: [Platja de ses Illetes West](https://www.navily.com/mouillage/platja-de-ses-illetes-west/10885) 38°45.62'N, 1°25.95'E, PR: NE-E-SE-S, «Карибы Средиземноморья» cамый известный пляж острова, подводой вроде есть сталактиты, можно провести следующее утро на пляже. Рестораны на берегу: Juan y Andrea, Besos Beach (можно швартоваться с помощью тендера).
    - Марина [La Savina](https://marinalasavina.com/), [navily](https://www.navily.com/port/port-formentera-marina/2308) 38°43.97'N, 1°25.17'E VHF-9
@@ -182,7 +183,7 @@
    - :green_heart: [Enseada de Tramontana](https://www.navily.com/mouillage/enseada-de-tramontana/38685) 38°40.47'N, 1°31.78'E, PR: E-SE-S-SW-W, угол в восточной части острова, красивые скалы есть пляж, пару ресторанов, пещера, нет заката
       - [Es Caló](https://maps.app.goo.gl/jcT8jS2DeCYN5aUZA) до 23:00
       - [Restaurant Can Rafalet](https://maps.app.goo.gl/o7bZQJTX6Hk9hKrK7) до 23:00
-- альтернатива **B** прибытие в San Antony:
+- альтернатива **вариант B** прибытие в San Antony:
    - Марины:
       - [Club Nàutic Sant Antoni](https://www.esnautic.com/), [navily](https://www.navily.com/port/club-nautic-sant-antoni-de-portmany/672) 38°58.63'N, 1°18.13'E VHF-9
       - [Ports IB San Antony](https://www.navily.com/port/ports-ib-san-antony-de-portimany/3610), [navily](https://www.navily.com/port/ports-ib-san-antony-de-portimany/3610) 38°58.63'N, 1°18.13'E VHF-14
@@ -195,8 +196,8 @@
 
 ### **День третий - 25.08.25: переход в Марину**
 - завтрак на яхте
-- **А** посещение красивых мест на Форментере: основные бухты указанны выше
-- **B** вокруг острова 
+- **вариант А** посещение красивых мест на Форментере: основные бухты указанны выше
+- **вариант B** вокруг острова 
    - по южной стороне 36mi:
       - :yellow_heart: [Cala Bassa](https://www.navily.com/mouillage/cala-bassa/7242) 38°58.13'N, 1°14.57'E, пещера
       - :green_heart: [Cala Comte (Cala Escondida)](https://www.navily.com/mouillage/es-raco-den-xic-cala-escondida/10906) 38°57.68'N, 1°13.10'E
@@ -213,16 +214,6 @@
       - :green_heart: [Cala Lionga](https://www.navily.com/mouillage/cala-llonga/8037) 38°57.20'N, 1°31.48'E, хорошая защитано маловато места, выход на пляж, 25 мин до UNVRS, 20мин Pacha
       - :green_heart: [Sol d'en Serra](https://www.navily.com/mouillage/sol-den-serra/44050) 38°56.77'N, 1°30.73'E, хорошая защита, есть выход через ресторан, 25 мин до UNVRS, 20мин Pacha
          - Amante(11-01) — ресторан на скале с видом на море, романтично.
-
-<<<<<<< HEAD
-### **День третий - 25.08.25: Formentera**
-- завтрак на яхте
-- посещение красивого места:
-   - :green_heart: [Platja de ses Illetes West](https://www.navily.com/mouillage/platja-de-ses-illetes-west/10885) 38°45.62'N, 1°25.95'E «Карибы Средиземноморья» cамый известный пляж острова, с кристально чистой водой и белым песком. Отличное место для якорной стоянки (днём), как будто вы в Мальдивах. Рестораны на берегу: Juan y Andrea, Beso Beach Formentera(можно швартоваться с помощью тендера).
-   - :green_heart: [Badia de s'Alga (Llacuna d'Espalmador)](https://www.navily.com/mouillage/badia-de-salga/19059) 38°46.77'N, 1°25.57'E Частный остров к северу от Форментеры, доступен только по морю. Дикие пляжи, солевые лагуны, уединённая атмосфера. Обязательно брать с собой воду и еду — ничего нет, зато невероятно красиво.
-   - :green_heart: [Cala Saona](https://www.navily.com/mouillage/cala-saona/6150) Уютная бухта на западном берегу острова, популярна среди яхт. Красные скалы, идеальный закат, прозрачная вода.
-=======
->>>>>>> be0c167 (update ibiza 2025 trip after booking marina)
 - обед на яхте
 - прибытие в марину к 18:00 [Santa Eulalia Ibiza](https://www.navily.com/port/marina-santa-eulalia-ibiza/676), [navily](https://www.navily.com/port/marina-santa-eulalia-ibiza/676) 38°59.02'N, 1°32.35'E, VHF-9, есть бронь до 28.08.25
 - optional в случае проблем в марине:
@@ -241,12 +232,12 @@
 
 ### **День четвертый - 26.08.25: Север острова**
 - завтрак на яхте
-- **А** вокруг острова по северной стороны до маяка Punta Moscarter:
+- **вариант А** вокруг острова по северной стороны до маяка Punta Moscarter:
    - :green_heart: [Sol d'en Serra](https://www.navily.com/mouillage/sol-den-serra/44050) 38°56.77'N, 1°30.73'E, хорошая защита, есть выход через ресторан, 25 мин до UNVRS, 20мин Pacha
       - Amante(11-01) — ресторан на скале с видом на море, романтично.
    - :green_heart: [Cala Lionga](https://www.navily.com/mouillage/cala-llonga/8037) 38°57.20'N, 1°31.48'E, хорошая защитано маловато места, выход на пляж, 25 мин до UNVRS, 20мин Pacha
    - :green_heart: [Cala de Portinatx](https://www.navily.com/mouillage/cala-de-portinatx/6154) 39°6.65'N, 1°30.88'E, хорошая защита и инфраструктура вокруг, есть пляж, маяк, пещера, 30 мин до UNVRS и Pacha
-- **B** Formentera: основные бухты указанны выше
+- **вариант B** Formentera: основные бухты указанны выше
 - обед на яхте
 - вкрнуться в Марину к 19:00
 - Ужин в старом городе:
@@ -254,11 +245,13 @@
 - клуб [Pacha: CAMELPHAT](https://www.ibiza-spotlight.com/night/promoters/camelphat-pacha) 23:30
    - optional клуб [Amnesia: Eastenderz](https://www.ibiza-spotlight.com/night/promoters/eastenderz-amnesia) 01:00
 
+
 ### **День пятый - 27.08.25: Ibiza Beach**
 - завтрак на яхте
-- едем сразу на такси на пляж Playa d’en Bossa
-- обед в городе или на пляже
-- алтернатива:
+- **вариант A**:
+   - едем сразу на такси на пляж Playa d’en Bossa
+   - обед в городе или на пляже
+- **вариант B**:
    - переход к пляжу Playa d’en Bossa и обратно, нужно быть в Марине в 15:00:
       - :yellow_heart: [Cala Talamanca](https://www.navily.com/mouillage/cala-talamanca/10959) 38°54.87'N, 1°27.48'E, удобный [dingy pears](https://maps.app.goo.gl/5cGGSq2NwSb4G1oF8), 15мин Pacha Пешком, 15мин UNVRS
       - :yellow_heart: [Cala Roja](https://www.navily.com/mouillage/cala-roja/51160) 38°54.88'N, 1°28.57'E, есть небольшой пляж но не уверен что от туда есть выход к дороге, 20 мин до UNVRS, 15мин Pacha
@@ -266,6 +259,7 @@
    - обед на яхте
 - клуб [Ushuaïa: Dimitri Vegas & Like Mike](https://www.ibiza-spotlight.com/night/promoters/tomorrowland-presents-dimitri-vegas-mike) 17:00-23:00
 - Ужин на яхте 
+
 
 ### **День шестой - 28.08.25: переход обратно Alicante**
 - подъем 7:00
@@ -287,6 +281,7 @@
 - возвращение в марину
 - Ужин набережная Denia
 - подведение итогов (обмен фотками, деньгами, впечатлениями)
+
 
 ### **День восьмой - 30.08.25: Denia**
 - подьем 07:00
