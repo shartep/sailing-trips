@@ -301,15 +301,24 @@
 
 
 
+# ДРУГИЕ ПОЛЕЗНЫЕ РЕСУРСЫ:
+
+## San Antonio
+
+- рестораны в San Antonio если мы вдруг там остановимся:
+   - [Sunset Ashram](https://maps.app.goo.gl/2DJviAeUfei7jc4a8) до 21:30 — шикарное место для заката. Часто стоят яхты рядом с пляжем, хорошая якорная зона.
+   - [Cafe del Mar](https://maps.app.goo.gl/LX1xovHMxVBLYQsR6) до 01:00
+   - [Café Mambo Ibiza](https://maps.app.goo.gl/fQXYjshvytTgR42H9) до 03:00
+   - [Hostal Restaurante la Torre](https://maps.app.goo.gl/oVRWqUzPP5TY5PLB8) до 00:00
+- бухта для ночевка возле San Antonio если мы вдруг там остановимся:
+   - :green_heart: [Port des Torrent](https://www.navily.com/mouillage/port-des-torrent/10911) 38°58.10'N, 1°15.87'E
+
+
+
 
 ================= DRAFT info =================
-   - Ужин рестораны в San Antonio если мы вдруг там остановимся:
-      - [Sunset Ashram](https://maps.app.goo.gl/2DJviAeUfei7jc4a8) до 21:30 — шикарное место для заката. Часто стоят яхты рядом с пляжем, хорошая якорная зона.
-      - [Cafe del Mar](https://maps.app.goo.gl/LX1xovHMxVBLYQsR6) до 01:00
-      - [Café Mambo Ibiza](https://maps.app.goo.gl/fQXYjshvytTgR42H9) до 03:00
-      - [Hostal Restaurante la Torre](https://maps.app.goo.gl/oVRWqUzPP5TY5PLB8) до 00:00
-   - бухта для ночевка возле San Antonio если мы вдруг там остановимся:
-      - :green_heart: [Port des Torrent](https://www.navily.com/mouillage/port-des-torrent/10911) 38°58.10'N, 1°15.87'E
+
+
 
 
 
