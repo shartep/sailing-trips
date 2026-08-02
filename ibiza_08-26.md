@@ -330,9 +330,11 @@
 |          |       |     |Tiesto|  UNVRS   |     50      |
 |          |       |     |Sonny Fodera|  Pasha   |     30      |
 |          | 25/08 | Tue |Calvin Harris| Ushuaia  |     120     |
-|    **    | 26/08 | Wed |Medusa & James Hype| Hi Ibiza |     40      |
+|    **    | 26/08 | Wed |Dmitry Vegas + Steve Aoki| Ushuaia | 55 |
+|    **    |       |     |Medusa & James Hype| Hi Ibiza |     40      |
 |    *     |       |     |Paradise (Jamie Jones)|  UNVRS   |     75      |
-|          | 27/08 | Thu |FISHER|  UNVRS   |     50      |
+|          | 27/08 | Thu |Martin Garrix| Ushuaia | 75 |
+|          |       |     |FISHER|  UNVRS   |     50      |
 |          |       |     |HUEGEL + Ms. Monique| Hi Ibiza |     45      |
 |    *     | 28/08 | Fri |Calvin Harris| Ushuaia  |     135     |
 |   ***    |       |     |Dom Dolla| Hi Ibiza |     55      |
