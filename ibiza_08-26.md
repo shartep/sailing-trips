@@ -322,7 +322,7 @@
 |:--------:|:------|:----|:---|:--------:|:-----------:|
 |   ***    | 21/08 | Fri |David Guetta|  UNVRS   |     110     |
 |    *     |       |     |Dom Dolla| HI Ibiza |     55      |
-|   ***    | 22/08 | Sat |Elrow|  UNVRS   |     85      |
+|   ***    | 22/08 | Sat |Elrow + Fatboy Slim|  UNVRS   |     85      |
 |    *     |       |     |Black Coffe| Hi Ibiza |     85      |
 |          | 23/08 | Sun |Swedish House Mafia| Ushuaia  |     90      |
 |          |       |     |Carl Cox|  UNVRS   |     50      |
