@@ -3,7 +3,7 @@
 
 ## 🎒 **Что взять из вещей**
 
-- [iCloud doc]([https://www.icloud.com/numbers/04eJo1torXGbcrh-Sk8fvuB7w#%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B2%D0%B5%D1%89%D0%B5%D0%B8%CC%86_%D0%B4%D0%BB%D1%8F_%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0](https://www.icloud.com/numbers/083wvz8__4WMiaMy-T0meo8Uw#%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B2%D0%B5%D1%89%D0%B5%D0%B8%CC%86_%D0%B4%D0%BB%D1%8F_%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0))
+- [iCloud doc](https://www.icloud.com/numbers/083wvz8__4WMiaMy-T0meo8Uw#%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B2%D0%B5%D1%89%D0%B5%D0%B8%CC%86_%D0%B4%D0%BB%D1%8F_%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0))
 
 ## Характеристики Яхты
 - Название: Koala II
@@ -21,25 +21,40 @@
 
 # ИТОГОВЫЙ ПЛАН-МАРШРУТ
 
-### **День первый - 23.08.25: Denia**
+### **День первый - 22.08.26 суббота: Check-in**
 - закупка припасов согласно [списка продуктов](#список-продуктов) - Юля
 - прибыть в марину как можно раньше, осмотреться, возможно получится заселится раньше
-- официальный check-in 14:00
+- официальный check-in 15:30 
 - приемка лодки согласно [чеклиста](#чеклист-приемки-лодки) - Алик
-- safety breefing, безопастность в Марине и на Яхте, базовые правила, что как работает, туалет
-- выход в море, знакомство с яхтой
-- тренировка Man Over Board + MayDay
-- возвращение в Марину
-- подготовка к переходу, проверить погоду, откоректировать план перехода, определить время отправления, точку назначения
+- safety briefing, безопастность в Марине и на Яхте, базовые правила, что как работает, туалет
+- 2 варианта в зависимости от погоды и возможности остаться ночевать в марине:
+   - ночуем в марине
+   - переход в [Cala Talamanca](https://www.navily.com/mouillage/cala-talamanca/10959)
 - ужин на яхте
-- окончательное планирование перехода: проверить погоду, ветер, волны, выбрать точку назначения
+- окончательное планирование следующего дня: проверить погоду, ветер, волны, выбрать точку ночевки
+- клуб [UNVRS Elrow party](https://www.unvrs.com/events/2026/elrow-ibiza/22-08-2026)
 
 
-### **День второй - 24.08.25: переход на Ibiza**
-- подъем 2:00
-- отправление 3:00
+### **День второй - 23.08.26 воскресенье: переход вокруг Formentera**
+- отправление 11:00 - 12:00
 - завтрак на яхте
 - обед на яхте
+- места остановки:
+   - [Es Pujols](https://www.navily.com/mouillage/es-pujols/8033)
+   - [Cala en Baster](https://www.navily.com/mouillage/cala-en-baster/10890)
+   - [Enseada de Tramontana](https://www.navily.com/mouillage/enseada-de-tramontana/38685)
+   - [Cala Codolar](https://www.navily.com/mouillage/cala-codolar/23530)
+   - [Racó Blanc](https://www.navily.com/mouillage/raco-blanc/15854)
+   - [Cala Xotic](https://www.navily.com/mouillage/cala-xotic/41956) - рядом с городом
+- место ночевки:
+   - [Badia de s'Alga](https://www.navily.com/mouillage/badia-de-salga/19059)
+   - [Cala Saona](https://www.navily.com/mouillage/cala-saona/6150)   
+- ужин на яхте
+
+### **День третий - 24.08.25 понедельник: переход в окрестности San Antonio**
+
+
+
 - прибытие в порт Ibiza чтоб выгрузить шкипера - 13:00
 - основной **вариант А** прибытие на Espalmador (Форментера):
    - :green_heart: буи [Badia de s'Alga](https://www.navily.com/mouillage/badia-de-salga/19059) 38°46.77'N, 1°25.57'E VHF-77 +34971439779, PR: NW-N-NE-E, частный остров к северу от Форментеры, доступен только по морю. Дикие пляжи, солевые лагуны, уединённая атмосфера, нельзя ставать на якорь, пляж дикий необитаемый, по пляжу можно дойти до города, бронировать буй
