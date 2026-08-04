@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>20 лучших бухт Ибицы для яхты — карта стоянок</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root{
+    --bg:#0d1b26; --panel:#122430; --line:#1e3a4a; --text:#e8f1f5;
+    --muted:#8fa8b6; --accent:#38bdf8; --accent2:#f59e0b; --green:#34d399;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+  #app{display:flex;height:100%}
+  #side{width:420px;min-width:320px;max-width:50%;overflow-y:auto;background:var(--panel);border-right:1px solid var(--line)}
+  #map{flex:1}
+  header{padding:18px 18px 12px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:5}
+  h1{font-size:17px;margin:0 0 4px}
+  .sub{font-size:12px;color:var(--muted);line-height:1.5}
+  .filters{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .chip{font-size:11px;padding:5px 9px;border-radius:999px;border:1px solid var(--line);background:#0f1f2b;color:var(--muted);cursor:pointer;user-select:none}
+  .chip.on{background:var(--accent);color:#04212e;border-color:var(--accent);font-weight:600}
+  .card{padding:13px 18px;border-bottom:1px solid var(--line);cursor:pointer}
+  .card:hover{background:#162c3a}
+  .card.active{background:#16303f;box-shadow:inset 3px 0 0 var(--accent)}
+  .card h3{margin:0 0 4px;font-size:14px;display:flex;gap:8px;align-items:baseline}
+  .num{color:var(--accent);font-variant-numeric:tabular-nums;font-weight:700;min-width:20px}
+  .bonus .num{color:var(--accent2)}
+  .meta{font-size:11px;color:var(--muted);margin:0 0 6px;font-variant-numeric:tabular-nums}
+  .card p{margin:0;font-size:12.5px;line-height:1.55;color:#cfe0e8}
+  .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+  .tag{font-size:10.5px;padding:3px 7px;border-radius:4px;background:#0f2836;color:#9fc4d4;border:1px solid var(--line)}
+  .tag.warn{background:#3a2410;color:#fcd34d;border-color:#5a3a14}
+  .tag.good{background:#0e2f26;color:#6ee7b7;border-color:#175c47}
+  .tag.cave{background:#251c3d;color:#c4b5fd;border-color:#463273}
+  .chip.cave-chip{border-color:#463273;color:#c4b5fd;background:#1c1630}
+  .chip.cave-chip.on{background:#a78bfa;color:#1a1030;border-color:#a78bfa;font-weight:600}
+  .section-head{padding:14px 18px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+    color:#6ee7b7;background:#0e2620;border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:0}
+  .poi h3 .num{color:var(--green);font-size:13px}
+  .poi.active{box-shadow:inset 3px 0 0 var(--green);background:#12302a}
+  .card p.cave{margin-top:8px;padding:8px 10px;border-left:2px solid #a78bfa;background:#1a1730;color:#ddd3f5;font-size:12px;border-radius:0 4px 4px 0}
+  footer{padding:16px 18px 40px;font-size:11px;color:var(--muted);line-height:1.6}
+  .leaflet-popup-content{font-size:12.5px;line-height:1.5;margin:12px 14px}
+  .leaflet-popup-content b{font-size:13.5px}
+  .pin{border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#04212e;border:2px solid #04212e;box-shadow:0 1px 4px rgba(0,0,0,.5)}
+  #toggleSide{position:absolute;z-index:1000;left:10px;top:10px;display:none}
+  @media (max-width:820px){#app{flex-direction:column}#side{width:100%;max-width:100%;height:52%}#map{height:48%}}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="side">
+    <header>
+      <h1>⛵ 20 лучших бухт Ибицы для стоянки на яхте</h1>
+      <div class="sub">Координаты, грунт, глубины, защита от ветра. Плюс 3 бонусные стоянки на Форментере.<br>
+      Кликните карточку или маркер. <span style="color:#38bdf8">●</span> бухты · <span style="color:#a78bfa">◉</span> пещеры, арки и гроты · <span style="color:#34d399">▲</span> маяки, башни, островки и другие точки, которые смотрят с воды. Слои и маршрут переключаются в правом верхнем углу карты.</div>
+      <div class="filters" id="filters"></div>
+    </header>
+    <div id="list"></div>
+    <div class="section-head">★ Достопримечательности, которые смотрят с воды</div>
+    <div id="poilist"></div>
+    <footer>
+      <b>⚠️ Посидония.</b> Морская трава Posidonia oceanica охраняется законом Балеар: якорение на ней запрещено, штраф до 300 000 €.
+      Бросайте якорь только на песке — светлые пятна на дне, видны с флайбриджа в поляризационных очках или по приложению <i>Posidonia Maps</i> / <i>NauticGuard</i>.
+      В Ses Salines, Espalmador и Ses Illetes работают морские парки с платными буями и патрулями.<br><br>
+      <b>Ветер.</b> Летом преобладает бриз с юго-запада (Embat) днём и штиль ночью. При сильном <i>Tramontana</i> (N/NE) уходите на юг и запад острова, при <i>Llebeig</i> (SW) — на восток и северо-восток.<br><br>
+      <b>Топливо и вода:</b> Marina Botafoch, Marina Ibiza, Club Náutico Sant Antoni, Santa Eulària, La Savina (Форментера).<br><br>
+      Данные — ориентировочные, для планирования. Перед выходом сверяйтесь с актуальной картой, прогнозом и локальными правилами.
+    </footer>
+  </div>
+  <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const bays = [
+ {n:1,name:"Cala Salada & Cala Saladeta",area:"Запад",lat:38.9903,lon:1.2853,depth:"5–12 м",bottom:"песок с пятнами посидонии",prot:["N","E","NE"],
+  txt:"Двойная бухта в соснах у Сант-Антони — одна из самых живописных на острове. Держит хорошо на песке ближе к центру входа. Днём людно от туристических лодок, лучше приходить до 11:00 или после 17:00.",
+  cave:"Punta Galera (~1,5 км к югу): плоские каменные террасы с гротами и промоинами в скале — заходят на тендере или вплавь. В обрывах между Cala Salada и Cap Nunó также находится Cova de Ses Fontanelles / Cova des Vi с наскальными рисунками — охраняемый объект, доступ с земли.",
+  tags:[["Пляжный ресторан","good"],["🕳 Гроты Punta Galera","cave"],["Посидония — смотрите дно","warn"]]},
+ {n:2,name:"Cala Gració / Gracioneta",area:"Запад",lat:38.9855,lon:1.2947,depth:"4–8 м",bottom:"песок",prot:["N","NE","E"],
+  txt:"Пара мелких карманов в 10 минутах от Сант-Антони. Удобная быстрая остановка на обед и купание, отличная защита от северного бриза. Тесно — заходите на небольшой лодке или вставайте у входа.",
+  tags:[["Близко к марине","good"],["Мало места","warn"]]},
+ {n:3,name:"Cala Comte (Platges de Comte)",area:"Запад",lat:38.9624,lon:1.2237,depth:"4–10 м",bottom:"песок",prot:["N","E"],
+  txt:"Бирюзовая вода, вид на островки Sa Conillera и S'Espartar — визитная карточка западного берега и лучшее место на закат. Ставьте якорь на песке между островами и берегом. Проход между Conillera и берегом мелкий — идите по карте.",
+  tags:[["Закатная стоянка","good"],["Sunset Ashram рядом","good"],["Зыбь при SW","warn"]]},
+ {n:4,name:"Cala Bassa",area:"Запад",lat:38.9584,lon:1.2415,depth:"5–12 м",bottom:"песок",prot:["N","NE","W"],
+  txt:"Широкая песчаная бухта с отличным держанием — классика для ночёвки на западе. Есть буйное поле и beach club CBbC с тендер-доком. Много трафика днём.",
+  tags:[["Буи / тендер-док","good"],["Ночёвка ОК","good"]]},
+ {n:5,name:"Cala Tarida",area:"Запад",lat:38.9396,lon:1.2263,depth:"4–10 м",bottom:"песок",prot:["N","E","NE"],
+  txt:"Три песчаных языка, плавный вход, мелко и спокойно — комфортно с детьми. Несколько ресторанов прямо на пляже. При юго-западном заходит зыбь.",
+  tags:[["Отлично для купания","good"],["Рестораны на берегу","good"]]},
+ {n:6,name:"Cala Vedella (Vadella)",area:"Юго-запад",lat:38.9201,lon:1.2247,depth:"3–9 м",bottom:"песок",prot:["N","NE","E","SE"],
+  txt:"Глубокий узкий фьорд — самая защищённая бухта западного берега и надёжное убежище при усилении ветра. Внутри буи и маленькая марина, снаружи — место для якоря на 8–10 м.",
+  cave:"Один из лучших участков для пещер на острове: в скалах между Cala Vadella, Cala Molí и Cala Tarida — несколько морских грота и тоннелей, куда заходят на тендере, SUP или вплавь. Свет из входа даёт эффект «голубой пещеры». Крупная лодка внутрь не идёт — вставайте на якорь снаружи.",
+  tags:[["Укрытие при непогоде","good"],["🕳 Гроты и тоннели","cave"],["Буи","good"]]},
+ {n:7,name:"Cala Carbó",area:"Юго-запад",lat:38.8867,lon:1.2224,depth:"5–12 м",bottom:"песок и галька",prot:["N","NE","E"],
+  txt:"Тихий каменистый карман рядом с Cala d'Hort, почти без лодочного трафика. Прозрачная вода, хороший снорклинг, два семейных рыбных ресторана.",
+  tags:[["Спокойно и малолюдно","good"],["Рыбные рестораны","good"]]},
+ {n:8,name:"Cala d'Hort & Es Vedrà",area:"Юго-запад",lat:38.8796,lon:1.2247,depth:"6–15 м",bottom:"песок, местами посидония",prot:["N","NE","E"],
+  txt:"Вид на скалу Es Vedrà — самая фотогеничная стоянка Ибицы, обязательный пункт любого маршрута. Можно обойти Es Vedrà и Es Vedranell кругом (глубины большие, держитесь 100+ м от скал из-за камнепада). Ночью бывает накат — стоянка скорее дневная.",
+  cave:"Sa Pedrera de Cala d'Hort («Атлантида»), ~1 км к югу под башней Torre des Savinar: заброшенная каменоломня со ступенчатыми камерами, вырубленными в скале, гротами и бассейнами с морской водой. Подход на тендере в тихую погоду, высадка по камням.",
+  tags:[["Must-see","good"],["🕳 «Атлантида» рядом","cave"],["Ночью неспокойно","warn"]]},
+ {n:9,name:"Sa Caleta (Es Bol Nou)",area:"Юг",lat:38.8608,lon:1.3175,depth:"4–8 м",bottom:"песок",prot:["N","NW","NE"],
+  txt:"Красные скалы, финикийское поселение (UNESCO) и легендарный ресторан Sa Caleta с рыбой на углях. Мелко, узко — заходить аккуратно, ночевать не стоит.",
+  tags:[["Гастро-остановка","good"],["Только дневная стоянка","warn"]]},
+ {n:10,name:"Cala Jondal",area:"Юг",lat:38.8748,lon:1.3383,depth:"5–15 м",bottom:"песок и галька",prot:["N","NW","NE"],
+  txt:"Главная «яхтенная» бухта острова: Blue Marlin, Tropicana, Es Xarcu — все с тендер-доками и услугами для лодок. Держание неплохое, но летом плотный ряд яхт и тендеров, приходите заранее.",
+  tags:[["Beach clubs + тендеры","good"],["Очень людно","warn"]]},
+ {n:11,name:"Ses Salines / Es Cavallet",area:"Юг",lat:38.8420,lon:1.4030,depth:"3–8 м",bottom:"песок",prot:["N","NW","W"],
+  txt:"Длинный песчаный берег природного парка напротив Форментеры — идеальный трамплин перед переходом через пролив Es Freus. Держание отличное на чистом песке. Заповедник: буи платные, зона якорения ограничена, патрули регулярные.",
+  tags:[["Природный парк — правила","warn"],["Ждать погоду перед Форментерой","good"],["Beso Beach / Jockey Club","good"]]},
+ {n:12,name:"Cala Llonga",area:"Восток",lat:38.9560,lon:1.4720,depth:"4–10 м",bottom:"песок",prot:["N","W","NW","S"],
+  txt:"Глубокая бухта с высокими стенами между Ибицей и Санта-Эулалией — очень спокойно, хорошее место для ночёвки на восточном берегу. Вся инфраструктура на берегу, рядом марина Santa Eulària.",
+  tags:[["Спокойная ночёвка","good"],["Инфраструктура рядом","good"]]},
+ {n:13,name:"Cala Mastella & Cala Boix",area:"Северо-восток",lat:39.0247,lon:1.6099,depth:"5–12 м",bottom:"песок и камни",prot:["W","SW","N"],
+  txt:"Крошечная Mastella известна культовым Bigotes — рыбный bullit de peix только по предзаписи. Рядом более открытая Cala Boix с тёмным песком. Стоянка дневная, места мало.",
+  tags:[["Bigotes — бронировать","good"],["Тесно","warn"]]},
+ {n:14,name:"Isla Tagomago",area:"Северо-восток",lat:39.0349,lon:1.6386,depth:"6–18 м",bottom:"песок среди скал",prot:["W","SW"],
+  txt:"Частный остров у Santa Eulària — лучший снорклинг и дайвинг восточного берега, прозрачность обычно 20+ м. Ставьте якорь на песчаных пятнах в проливе с западной стороны. Высадка на остров запрещена.",
+  tags:[["Снорклинг / дайвинг","good"],["Открыто при E","warn"]]},
+ {n:15,name:"Cala Sant Vicent",area:"Северо-восток",lat:39.0672,lon:1.5875,depth:"5–14 м",bottom:"песок",prot:["W","SW","S"],
+  txt:"Большая песчаная бухта на северо-востоке с надёжным держанием — комфортна, когда с юго-запада дует Llebeig. Есть городок и рестораны.",
+  cave:"Cova des Culleram — карфагенское святилище богини Танит (до II в. до н.э.), в склоне примерно в 5 км к северо-западу от бухты. Найдено около 600 терракотовых фигурок. Сама пещера небольшая; вход только с земли — подъезд по PM-811 и несколько сотен метров пешком.",
+  tags:[["Много места","good"],["🕳 Cova des Culleram","cave"],["Хорошо при SW","good"]]},
+ {n:16,name:"Portinatx (S'Arenal Petit / Gran)",area:"Север",lat:39.1130,lon:1.5170,depth:"4–10 м",bottom:"песок",prot:["S","SW","SE","W"],
+  txt:"Самая северная точка острова: три бухты в одной, маяк Punta des Moscarter, вода как в бассейне. Хорошая база для перехода на Майорку. При Tramontana (N) уходить обязательно.",
+  tags:[["Городок и провизия","good"],["Плохо при N","warn"]]},
+ {n:17,name:"Cala Xarraca & Cala Xuclar",area:"Север",lat:39.0836,lon:1.4600,depth:"4–10 м",bottom:"песок и камни",prot:["S","SW","E"],
+  txt:"Дикие бухты с целебными глиняными грязями и почти нетронутым берегом. Xuclar рядом — крошечная, с рыбацкими сараями и простым ресторанчиком. Днём тихо, ночевать только в штиль.",
+  tags:[["Дикая природа","good"],["Только в штиль","warn"]]},
+ {n:18,name:"Cala Benirràs",area:"Север",lat:39.1043,lon:1.4116,depth:"6–14 м",bottom:"песок и галька",prot:["S","SE","SW"],
+  txt:"Скала Cap Bernat («палец бога») и барабаны на закате по воскресеньям — самая атмосферная бухта севера. Глубины позволяют встать даже большой лодке, но открыта северу и часто есть накат.",
+  tags:[["Барабаны в воскресенье","good"],["Накат с N","warn"]]},
+ {n:19,name:"Es Portitxol (Sant Miquel)",area:"Север",lat:39.0714,lon:1.3745,depth:"5–12 м",bottom:"песок и галька",prot:["S","SE","SW","E"],
+  txt:"Скрытая бухта с рядом старых лодочных сараев — попасть по земле почти невозможно, поэтому по-настоящему тихо. Нет никакой инфраструктуры: только вода, скалы и рыба. Одна из лучших дневных стоянок острова.",
+  cave:"Cova de Can Marçà — главная пещера Ибицы, ~1 км к востоку в обрыве над Port de Sant Miquel. Возраст около 100 000 лет, сталактиты, сталагмиты, подземные озёра и водопад; когда-то использовалась контрабандистами. Экскурсия ~40 минут, вход с площадки в скале — удобно доехать на тендере до Port de Sant Miquel.",
+  tags:[["Приватность","good"],["🕳 Cova de Can Marçà","cave"],["Нет сервиса","warn"]]},
+ {n:20,name:"Cala d'Aubarca",area:"Северо-запад",lat:39.0530,lon:1.3430,depth:"8–20 м",bottom:"песок и скалы",prot:["S","SE"],
+  txt:"Огромный дикий залив с арками и утёсами — самый впечатляющий природный участок берега. Глубоко, держание среднее, стоянка исключительно в тихую погоду и только днём. Практически всегда пусто.",
+  cave:"Лучший «пещерный» участок Ибицы. Островки Ses Margalides с огромной естественной аркой, через которую проходят на тендере, и обрывы Ses Balandres с подводными пещерами и гротами — топовое место для снорклинга. Всё в пределах 1–3 км от точки стоянки.",
+  tags:[["🕳 Арка Ses Margalides","cave"],["Подводные пещеры","cave"],["Только полный штиль","warn"]]},
+ {n:"F1",name:"S'Espalmador",area:"Форментера (бонус)",lat:38.7862,lon:1.4363,bonus:true,depth:"2–6 м",bottom:"чистый песок",prot:["S","SE","E","N"],
+  txt:"Необитаемый остров между Ибицей и Форментерой — карибский песок, лагуна с лечебной грязью, лучшая стоянка архипелага. Мелко: следите за глубиной и заходите с осторожностью. Строгий заповедник, буи по предварительному разрешению.",
+  tags:[["Топ-1 архипелага","good"],["Разрешение / буи обязательны","warn"],["Мелководье","warn"]]},
+ {n:"F2",name:"Ses Illetes (Форментера)",area:"Форментера (бонус)",lat:38.7480,lon:1.4290,bonus:true,depth:"3–8 м",bottom:"песок",prot:["W","E"],
+  txt:"Полоса белого песка в национальном парке — самое популярное направление дневных чартеров с Ибицы. Только платные буи, якорение фактически запрещено; бронируйте место заранее через официальную систему.",
+  tags:[["Только буи, бронь","warn"],["Beso Beach / Juan y Andrea","good"]]},
+ {n:"F3",name:"Cala Saona (Форментера)",area:"Форментера (бонус)",lat:38.7005,lon:1.3955,bonus:true,depth:"4–10 м",bottom:"песок",prot:["N","E","NE"],
+  txt:"Западный берег Форментеры: красные утёсы, песчаное дно, лучший закат острова. Отличное держание, но открыта западу — уходить при Llebeig.",
+  cave:"Ближайшая база к пещерам Форментеры. Cova Foradada у маяка Cap de Barbaria (~8 км к югу) — «окно» в обрыве над морем. На северном берегу La Mola — Cova des Fum («дымная пещера», по легенде тайник викинга Сигурда) и Cova d'Estrips. Обычный формат — переход вдоль берега и осмотр с воды или тендера.",
+  tags:[["Закат","good"],["🕳 Пещеры Форментеры","cave"],["Хорошее держание","good"]]}
+];
+// Пещеры, арки и гроты в береговой линии рядом с бухтами
+const caveSpots = [
+ {name:"Punta Galera — гроты в скальных террасах",near:"Cala Salada (1)",lat:38.9930,lon:1.2903,access:"тендер / вплавь"},
+ {name:"Гроты и тоннели Vadella – Molí – Tarida",near:"Cala Vadella (6)",lat:38.9245,lon:1.2228,access:"тендер, SUP, вплавь"},
+ {name:"Sa Pedrera de Cala d'Hort («Атлантида»)",near:"Cala d'Hort (8)",lat:38.8674,lon:1.2175,access:"тендер, высадка по камням"},
+ {name:"Cova des Culleram — святилище Танит",near:"Cala Sant Vicent (15)",lat:39.0728,lon:1.5710,access:"только с земли, пешком"},
+ {name:"Cova de Can Marçà — сталактиты, экскурсия 40 мин",near:"Es Portitxol (19)",lat:39.0797,lon:1.3742,access:"тендер до Port de Sant Miquel"},
+ {name:"Ses Margalides — большая природная арка",near:"Cala d'Aubarca (20)",lat:39.0620,lon:1.3050,access:"проход на тендере через арку"},
+ {name:"Ses Balandres — подводные пещеры и гроты",near:"Cala d'Aubarca (20)",lat:39.0565,lon:1.3170,access:"снорклинг / тендер"},
+ {name:"Cova Foradada — «окно» в обрыве, Cap de Barbaria",near:"Cala Saona (F3)",lat:38.6410,lon:1.3880,access:"осмотр с воды"},
+ {name:"Cova des Fum + Cova d'Estrips, La Mola",near:"Cala Saona (F3)",lat:38.6900,lon:1.5480,access:"осмотр с воды / тендер"}
+];
+
+// Достопримечательности, которые смотрят с воды
+const poiSpots = [
+ // Запад и юго-запад
+ {name:"Es Vedrà и Es Vedranell",cat:"островок",lat:38.8722,lon:1.1997,
+  txt:"Скала 382 м, главный символ Ибицы. Охраняемый морской резерв: колония сокола Элеоноры и эндемичные ящерицы. Обход кругом впечатляет сильнее, чем вид из Cala d'Hort — держитесь 100+ м от стен из-за камнепада."},
+ {name:"Torre des Savinar (Башня пирата)",cat:"башня",lat:38.8664,lon:1.2158,
+  txt:"Дозорная башня 1763 года на обрыве 200 м над морем — строилась против пиратских набегов на юг острова. С воды читается как силуэт прямо над «Атлантидой»."},
+ {name:"Sa Conillera и маяк",cat:"островок",lat:38.9689,lon:1.2083,
+  txt:"Крупнейший из западных островков (Illots de Ponent) с действующим маяком. По легенде здесь родился Ганнибал. Высадка запрещена, но обход и снорклинг у берега отличные."},
+ {name:"S'Illa des Bosc",cat:"островок",lat:38.9636,lon:1.2181,
+  txt:"Маленький островок в узком проливе у Cala Comte — проход между ним и берегом мелкий, идти строго по карте. Один из лучших кадров на закате."},
+ {name:"S'Espartar",cat:"островок",lat:38.9569,lon:1.1667,
+  txt:"Дикий скалистый островок в 4 км от берега, где раньше собирали траву эспарто. Вода исключительно прозрачная, почти нет лодок — сильное место для снорклинга."},
+ {name:"Ses Bledes",cat:"островок",lat:38.9856,lon:1.1544,
+  txt:"Группа скал на северо-западной кромке архипелага — самый дикий участок. Только в штиль, зато глубины и видимость лучшие на западе."},
+ {name:"Torre d'en Rovira",cat:"башня",lat:38.9614,lon:1.2333,
+  txt:"Башня XVIII века на мысе напротив Sa Conillera, сразу к востоку от Platges de Comte. С воды — ориентир на входе в бухту Портмань."},
+ // Город и юг
+ {name:"Dalt Vila — Старый город с воды",cat:"город",lat:38.9067,lon:1.4356,
+  txt:"Крепостные стены XVI века и собор на холме, объект Всемирного наследия UNESCO. Классика — заход в порт Ибицы в золотой час: город подсвечен, а стены видны целиком только с моря."},
+ {name:"Маяк Botafoc",cat:"маяк",lat:38.9078,lon:1.4592,
+  txt:"Маяк на входе в порт Ибицы, рядом с Marina Botafoch. Главный ориентир при подходе к городу и удобная точка для дозаправки и воды."},
+ {name:"Затонувший Don Pedro (≈)",cat:"затонувшее судно",lat:38.8995,lon:1.4550,
+  txt:"Крупнейшее судно-риф Средиземноморья: паром 141 м, затонул в 2007-м, налетев на скалу у островка El Dado. Лежит на боку на 25–47 м, вокруг барракуды и тунец. Только для продвинутых дайверов, 5 минут от порта Ибицы."},
+ {name:"Torre de sa Sal Rossa",cat:"башня",lat:38.8817,lon:1.4083,
+  txt:"Башня XVI века над южным концом Playa d'en Bossa — охраняла вывоз соли из Салинас. Хороший ориентир на переходе от города к Ses Salines."},
+ {name:"Torre de Ses Portes",cat:"башня",lat:38.8367,lon:1.4128,
+  txt:"Башня на самой южной точке Ибицы, у входа в пролив Es Freus. Отсюда открывается вся Форментера — точка, где принимают решение идти или ждать погоды."},
+ {name:"Es Freus: Illa des Penjats и Illa des Porcs",cat:"островок",lat:38.8113,lon:1.4050,
+  txt:"Цепочка островков в проливе между островами. Маяк на Illa des Penjats («остров повешенных», где казнили пиратов) работает с 1856 года. Вода пролива внесена в наследие UNESCO из-за посидонии — якорение под особым контролем."},
+ // Север и восток
+ {name:"Маяк Punta des Moscarter",cat:"маяк",lat:39.1206,lon:1.5233,
+  txt:"Самый высокий маяк Балеар (52 м) на северной оконечности острова у Portinatx. Полосатая башня видна за много миль — главный ориентир на переходе к Майорке."},
+ {name:"Маяк Punta Grossa",cat:"маяк",lat:39.0561,lon:1.6019,
+  txt:"Маяк на высоком мысе между Cala Sant Vicent и Pou des Lleó. Под ним — обрывы и глубокая чистая вода; красивый участок для прохода вдоль берега."},
+ {name:"Torre d'en Valls и Pou des Lleó",cat:"башня",lat:39.0233,lon:1.6236,
+  txt:"Башня напротив острова Tagomago над рыбацкой бухтой Pou des Lleó с деревянными сараями-льянами. Тихий аутентичный уголок восточного берега."},
+ // Форментера
+ {name:"Маяк Cap de Barbaria и Torre des Garroveret",cat:"маяк",lat:38.6394,lon:1.3872,
+  txt:"Самый фотографируемый маяк Форментеры: 78 м над морем, свет виден на 18 миль, построен в 1971-м. Рядом дозорная башня около 1760 года и пещера Cova Foradada. Пустынный лунный ландшафт — с воды выглядит эффектнее всего."},
+ {name:"Маяк La Mola и монумент Жюлю Верну",cat:"маяк",lat:38.6614,lon:1.5769,
+  txt:"Маяк 1861 года на 120-метровом обрыве восточной оконечности Форментеры — упомянут Жюлем Верном в «Гекторе Сервадаке», рядом памятная стела. Внизу — пещеры северного берега La Mola."},
+ {name:"Es Trucadors и Molí de Sal",cat:"мыс",lat:38.7561,lon:1.4344,
+  txt:"Песчаная косá, отделяющая Форментеру от Espalmador: мелководье бирюзового цвета с обеих сторон. Течение в проходе Es Pas заметное — проходить аккуратно. Рядом старая соляная мельница Molí de Sal."},
+ {name:"S'Espardell",cat:"островок",lat:38.7936,lon:1.4694,
+  txt:"Дикий низкий островок в проливе Es Freus рядом с Espalmador — почти нет лодок, отличный снорклинг по песчаным пятнам. Часть природного парка Ses Salines."},
+ {name:"Torre de sa Punta Prima",cat:"башня",lat:38.7108,lon:1.5286,
+  txt:"Дозорная башня на восточном мысе Форментеры, ориентир при обходе острова с юга на север. Вокруг — скальные террасы и прозрачная вода."},
+ {name:"Punta Pedrera — природные бассейны",cat:"мыс",lat:38.7328,lon:1.4033,
+  txt:"Старые каменоломни к западу от La Savina: ступенчатые срезы породы и естественные бассейны с морской водой. Подход на тендере, купание в бассейнах — популярная остановка катамаранов."}
+];
+
+const map = L.map('map',{zoomControl:true}).setView([38.96,1.42],10);
+const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+const sea = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenSeaMap'});
+const routeLine = L.polyline([
+  [38.9147,1.4468],[38.8748,1.3383],[38.8608,1.3175],[38.8796,1.2247],[38.9201,1.2247],
+  [38.9396,1.2263],[38.9584,1.2415],[38.9624,1.2237],[38.9903,1.2853],[39.0530,1.3430],
+  [39.0714,1.3745],[39.1043,1.4116],[39.1130,1.5170],[39.0672,1.5875],[39.0349,1.6386],
+  [38.9560,1.4720],[38.8420,1.4030],[38.7862,1.4363],[38.7480,1.4290],[38.7005,1.3955]
+],{color:'#38bdf8',weight:2,opacity:.75,dashArray:'6 7'});
+const caveLayer = L.layerGroup();
+caveSpots.forEach(c=>{
+  const icon=L.divIcon({className:'',iconSize:[22,22],iconAnchor:[11,11],
+    html:`<div class="pin" style="width:22px;height:22px;background:#a78bfa;font-size:12px">◉</div>`});
+  L.marker([c.lat,c.lon],{icon}).addTo(caveLayer)
+   .bindPopup(`<b>🕳 ${c.name}</b><br><span style="color:#555">Рядом с: ${c.near}</span><br>Доступ: ${c.access}`,{maxWidth:280});
+});
+caveLayer.addTo(map);
+
+const poiGlyph = {"маяк":"⏛","башня":"⌂","островок":"▲","город":"▮","затонувшее судно":"⚓","мыс":"➤"};
+const poiLayer = L.layerGroup();
+poiSpots.forEach(p=>{
+  const icon=L.divIcon({className:'',iconSize:[22,22],iconAnchor:[11,11],
+    html:`<div class="pin" style="width:22px;height:22px;background:#34d399;font-size:11px">${poiGlyph[p.cat]||"★"}</div>`});
+  L.marker([p.lat,p.lon],{icon}).addTo(poiLayer)
+   .bindPopup(`<b>${p.name}</b><br><span style="color:#555">${p.cat} · ${dm(p.lat,1)} ${dm(p.lon,0)}</span><br><br>${p.txt}`,{maxWidth:300});
+});
+poiLayer.addTo(map);
+
+L.control.layers({"Карта OSM":osm},
+  {"🕳 Пещеры и арки":caveLayer,"★ Достопримечательности с воды":poiLayer,
+   "Морские знаки (OpenSeaMap)":sea,"Маршрут против часовой":routeLine},{collapsed:false}).addTo(map);
+
+function dm(v,isLat){
+  const h = isLat ? (v>=0?'N':'S') : (v>=0?'E':'W');
+  const a = Math.abs(v), d = Math.floor(a), m = ((a-d)*60).toFixed(2);
+  return `${d}°${m.padStart(5,'0')}'${h}`;
+}
+const list = document.getElementById('list');
+const markers = {}, cards = {};
+const areas = [...new Set(bays.map(b=>b.area))];
+let activeAreas = new Set(areas);
+let onlyCaves = false;
+
+function visible(b){ return activeAreas.has(b.area) && (!onlyCaves || b.cave); }
+
+function render(){
+  list.innerHTML='';
+  bays.filter(visible).forEach(b=>{
+    const el=document.createElement('div');
+    el.className='card'+(b.bonus?' bonus':'');
+    el.innerHTML=`<h3><span class="num">${b.n}</span><span>${b.name}</span></h3>
+      <p class="meta">${b.area} · ${dm(b.lat,1)} ${dm(b.lon,0)} · глубина ${b.depth} · грунт: ${b.bottom} · защита от ${b.prot.join("/")}</p>
+      <p>${b.txt}</p>
+      ${b.cave?`<p class="cave"><b>🕳 Пещеры рядом.</b> ${b.cave}</p>`:''}
+      <div class="tags">${b.tags.map(t=>`<span class="tag ${t[1]}">${t[0]}</span>`).join('')}</div>`;
+    el.onclick=()=>focus(b);
+    cards[b.n]=el; list.appendChild(el);
+  });
+}
+function focus(b){
+  Object.values(cards).forEach(c=>c.classList.remove('active'));
+  if(cards[b.n]){cards[b.n].classList.add('active');cards[b.n].scrollIntoView({block:'center',behavior:'smooth'});}
+  map.setView([b.lat,b.lon],14,{animate:true});
+  markers[b.n].openPopup();
+}
+bays.forEach(b=>{
+  const c=b.bonus?'#f59e0b':'#38bdf8', size=b.bonus?30:26;
+  const icon=L.divIcon({className:'',iconSize:[size,size],iconAnchor:[size/2,size/2],
+    html:`<div class="pin" style="width:${size}px;height:${size}px;background:${c}">${b.n}</div>`});
+  const m=L.marker([b.lat,b.lon],{icon}).addTo(map);
+  m.bindPopup(`<b>${b.n}. ${b.name}</b><br><span style="color:#555">${dm(b.lat,1)} ${dm(b.lon,0)}</span><br>
+    Глубина: ${b.depth}<br>Грунт: ${b.bottom}<br>Защита от: ${b.prot.join(", ")}<br><br>${b.txt}
+    ${b.cave?`<br><br><b>🕳 Пещеры рядом.</b> ${b.cave}`:''}`,{maxWidth:290});
+  m.on('click',()=>focus(b));
+  markers[b.n]=m;
+});
+const f=document.getElementById('filters');
+function syncMarkers(){
+  bays.forEach(b=>{ if(visible(b)) markers[b.n].addTo(map); else map.removeLayer(markers[b.n]); });
+}
+areas.forEach(a=>{
+  const c=document.createElement('span');c.className='chip on';c.textContent=a;
+  c.onclick=()=>{
+    if(activeAreas.has(a)){activeAreas.delete(a);c.classList.remove('on');}
+    else{activeAreas.add(a);c.classList.add('on');}
+    syncMarkers(); render();
+  };
+  f.appendChild(c);
+});
+const cc=document.createElement('span');
+cc.className='chip cave-chip';cc.textContent='🕳 Только с пещерами';
+cc.onclick=()=>{ onlyCaves=!onlyCaves; cc.classList.toggle('on',onlyCaves); syncMarkers(); render(); };
+f.appendChild(cc);
+render();
+
+// Список достопримечательностей
+const pl=document.getElementById('poilist');
+poiSpots.forEach((p,i)=>{
+  const el=document.createElement('div');
+  el.className='card poi';
+  el.innerHTML=`<h3><span class="num">${poiGlyph[p.cat]||"★"}</span><span>${p.name}</span></h3>
+    <p class="meta">${p.cat} · ${dm(p.lat,1)} ${dm(p.lon,0)}</p><p>${p.txt}</p>`;
+  el.onclick=()=>{
+    document.querySelectorAll('.poi').forEach(x=>x.classList.remove('active'));
+    el.classList.add('active');
+    if(!map.hasLayer(poiLayer)) poiLayer.addTo(map);
+    map.setView([p.lat,p.lon],14,{animate:true});
+    poiLayer.getLayers()[i].openPopup();
+  };
+  pl.appendChild(el);
+});
+map.fitBounds(L.latLngBounds(bays.map(b=>[b.lat,b.lon])).pad(0.12));
+</script>
+</body>
+</html>
