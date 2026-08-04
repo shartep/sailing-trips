@@ -70,6 +70,7 @@
 - завтрак на яхте
 - обед на яхте
 - возвращение в марину
+- заправка
 - Ужин набережная Ibiza
 - подведение итогов (обмен фотками, деньгами, впечатлениями)
 - клуб [Hi Ibiza Dom Dolla](https://www.hiibiza.com/events/2026/dom-dolla/2026-08-28)
@@ -179,17 +180,6 @@
    - обед на яхте
 - клуб [Ushuaïa: Dimitri Vegas & Like Mike](https://www.ibiza-spotlight.com/night/promoters/tomorrowland-presents-dimitri-vegas-mike) 17:00-23:00
 - Ужин на яхте 
-
-
-### **День шестой - 28.08.25: переход обратно Alicante**
-- подъем 7:00
-- завтрак на яхте
-- заправка
-- отправление 8:00
-- обед на яхте
-- прибытие в марину [Real Club Náutico de Calpe](https://www.navily.com/port/real-club-nautico-de-calpe/153) 38°38.30'N, 0°4.22'E
-- ужин [Bambero](https://maps.app.goo.gl/n99geJkbwsBtwKos6)
-- прогулка по набережной
 
 # ПРИЕМКА ЯХТЫ
 
