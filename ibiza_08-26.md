@@ -51,8 +51,18 @@
    - [Cala Saona](https://www.navily.com/mouillage/cala-saona/6150)   
 - ужин на яхте
 
-### **День третий - 24.08.25 понедельник: переход в окрестности San Antonio**
-
+### **День третий - 24.08.25 понедельник: Es Vedrà**
+- подъем 9:00
+- завтрак на яхте
+- купаемся в заливе Badia de s'Alga
+- обходим вокруг Es Vedrà 
+- обед на яхте в заливе [Cala d'Hort](https://www.navily.com/mouillage/cala-dhort/7240)
+- места остановки:
+   - 
+- место ночевки:
+   - [Cala Bassa](https://www.navily.com/mouillage/cala-bassa/7242)
+   - [Calla Vedella](https://www.navily.com/mouillage/calla-vedella/22337)
+- ужин на яхте
 
 
 - прибытие в порт Ibiza чтоб выгрузить шкипера - 13:00
