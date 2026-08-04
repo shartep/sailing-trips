@@ -60,13 +60,31 @@
 - обходим вокруг Es Vedrà 
 - обед на яхте в заливе [Cala d'Hort](https://www.navily.com/mouillage/cala-dhort/7240)
 - места остановки:
-   - 
 - место ночевки:
    - [Cala Bassa](https://www.navily.com/mouillage/cala-bassa/7242)
    - [Calla Vedella](https://www.navily.com/mouillage/calla-vedella/22337)
 - ужин на яхте
 
 
+### **День седьмой - 28.08.26: прибытие в Ibiza city**
+- завтрак на яхте
+- обед на яхте
+- возвращение в марину
+- Ужин набережная Ibiza
+- подведение итогов (обмен фотками, деньгами, впечатлениями)
+- клуб [Hi Ibiza Dom Dolla](https://www.hiibiza.com/events/2026/dom-dolla/2026-08-28)
+
+### **День восьмой - 29.08.26: Check-out**
+- подьем 10:00
+- завтрак на яхте
+- check-out 12:00
+- выезд из марины Ibiza 12:30 
+- прибытие в Аэропорт Ibiza 13:00
+- вылет из Аэропорта Ibiza 14:45
+
+
+
+### Outdated
 - прибытие в порт Ibiza чтоб выгрузить шкипера - 13:00
 - основной **вариант А** прибытие на Espalmador (Форментера):
    - :green_heart: буи [Badia de s'Alga](https://www.navily.com/mouillage/badia-de-salga/19059) 38°46.77'N, 1°25.57'E VHF-77 +34971439779, PR: NW-N-NE-E, частный остров к северу от Форментеры, доступен только по морю. Дикие пляжи, солевые лагуны, уединённая атмосфера, нельзя ставать на якорь, пляж дикий необитаемый, по пляжу можно дойти до города, бронировать буй
@@ -172,30 +190,6 @@
 - прибытие в марину [Real Club Náutico de Calpe](https://www.navily.com/port/real-club-nautico-de-calpe/153) 38°38.30'N, 0°4.22'E
 - ужин [Bambero](https://maps.app.goo.gl/n99geJkbwsBtwKos6)
 - прогулка по набережной
-
-
-### **День седьмой - 29.08.25: переход Alicante - Denia**
-- завтрак на яхте
-- хайкинг [Cim del Penyal d'Ifac](https://maps.app.goo.gl/mBprX51kwhtbk5DS9)
-- :green_heart: [Cala el Pom](https://www.navily.com/mouillage/cala-el-pom/7217) 38°44.77'N, 0°13.62'E
-- [Cova Tallada](https://maps.app.goo.gl/jQFk9zTu5z7ykUCR8) - морская пещера, можно подойти на тузике
-- обед на яхте
-- возвращение в марину
-- Ужин набережная Denia
-- подведение итогов (обмен фотками, деньгами, впечатлениями)
-
-
-### **День восьмой - 30.08.25: Denia**
-- подьем 07:00
-- завтрак на яхте
-- check-out 10:00
-- выезд из марины Denia 11:00 
-- check-in на рейс
-- выезд из лагеря 19:30
-- прибытие в car rental DelPaso 21:15
-- прибытие в Аэропорт Малага 21:30
-- вылет из Аэропорта Малага 23:45
-
 
 # ПРИЕМКА ЯХТЫ
 
