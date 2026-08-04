@@ -47,7 +47,7 @@
    - [Racó Blanc](https://www.navily.com/mouillage/raco-blanc/15854)
    - [Cala Xotic](https://www.navily.com/mouillage/cala-xotic/41956) - рядом с городом
 - место ночевки:
-   - [Badia de s'Alga](https://www.navily.com/mouillage/badia-de-salga/19059)
+   - [Badia de s'Alga](https://www.navily.com/mouillage/badia-de-salga/19059) - buyo #ES53
    - [Cala Saona](https://www.navily.com/mouillage/cala-saona/6150)   
 - ужин на яхте
 
