@@ -21,7 +21,7 @@
 
 # ИТОГОВЫЙ ПЛАН-МАРШРУТ
 
-[Лучшие бухты, пещеры и достопримечательности](https://shartep.github.io/sailing-trips/ibiza-yacht-bays-map.html)
+[Лучшие бухты, пещеры и достопримечательности](https://shartep.github.io/sailing-trips/ibiza-yacht-map.html)
 
 ### **День первый - 22.08.26 суббота: Check-in**
 - закупка припасов согласно [списка продуктов](#список-продуктов) - Юля
