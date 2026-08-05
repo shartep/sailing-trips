@@ -60,22 +60,25 @@
 - обходим вокруг Es Vedrà 
 - обед на яхте в заливе [Cala d'Hort](https://www.navily.com/mouillage/cala-dhort/7240)
 - места остановки:
+   - TBD
 - место ночевки:
    - [Cala Bassa](https://www.navily.com/mouillage/cala-bassa/7242)
    - [Calla Vedella](https://www.navily.com/mouillage/calla-vedella/22337)
 - ужин на яхте
 
 
-### **День седьмой - 28.08.26: прибытие в Ibiza city**
+### **День седьмой - 28.08.26 пятница: прибытие в Ibiza city**
 - завтрак на яхте
 - обед на яхте
-- возвращение в марину
+- места остановки:
+   - TBD   
 - заправка
+- возвращение в марину
 - Ужин набережная Ibiza
 - подведение итогов (обмен фотками, деньгами, впечатлениями)
 - клуб [Hi Ibiza Dom Dolla](https://www.hiibiza.com/events/2026/dom-dolla/2026-08-28)
 
-### **День восьмой - 29.08.26: Check-out**
+### **День восьмой - 29.08.26 суббота: Check-out**
 - подьем 10:00
 - завтрак на яхте
 - check-out 12:00
